@@ -4,8 +4,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
-mpl.rcParams["font.sans-serif"]=["SimHei"]	# 使用中文字体
-mpl.rcParams["axes.unicode_minus"]=False	# 允许使用负号
+mpl.rcParams["font.sans-serif"] = ["SimHei"]
+mpl.rcParams["axes.unicode_minus"] = False
 
 # some simple data
 x = np.arange(5)
@@ -17,16 +17,16 @@ tick_label = ["A", "B", "C", "D", "E"]
 
 # create horizontal bar
 plt.barh(x, y, bar_width, color='c', align="center", label="班级A", alpha=0.5)
-plt.barh(x+bar_width, y1, bar_width, color="b", align="center", label="班级B", alpha=0.5)
+plt.barh(x+bar_width, y1, bar_width, color="b", align="center", label="班级B", alpha=0.5)	# 绘制多数据平行条形图
 
 # set x,y_axis label
 plt.xlabel("试卷份数")
 plt.ylabel("测试难度")
 
 plt.yticks(x+bar_width/2, tick_label)
-plt.locator_params(axis='x', nbins=5)
-plt.margins(x=0)
+plt.locator_params(axis='x', nbins=6)
+plt.margins(x=0, y=0.15)
 
-plt.legend()
+plt.legend(loc="upper right")
 
 plt.show()

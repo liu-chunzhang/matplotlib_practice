@@ -3,8 +3,8 @@
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-mpl.rcParams["font.sans-serif"] = ["SimHei"]	# 使用中文字体
-mpl.rcParams["axes.unicode_minus"] = False		# 不使用默认的Unicode minus模式来处理负号
+mpl.rcParams["font.sans-serif"] = ["SimHei"]
+mpl.rcParams["axes.unicode_minus"] = False
 
 # some simple data
 x = [1, 2, 3, 4, 5]
