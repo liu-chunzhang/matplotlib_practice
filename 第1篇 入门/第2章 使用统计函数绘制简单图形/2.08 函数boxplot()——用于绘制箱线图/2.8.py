@@ -4,12 +4,12 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
-mpl.rcParams["font.sans-serif"]=["Fangsong"]
-mpl.rcParams["axes.unicode_minus"]=False
+mpl.rcParams["font.sans-serif"] = ["Fangsong"]
+mpl.rcParams["axes.unicode_minus"] = False
 
 x = np.random.randn(1000)
 
-plt.boxplot(x, sym="+")
+plt.boxplot(x, sym="+")						# 绘制箱线图，更多解释见3.9节
 
 plt.xticks([1], ["随机数生成器AlphaRM"])
 plt.ylabel("随机数值")

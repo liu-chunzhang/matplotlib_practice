@@ -12,8 +12,8 @@ colors = ['#e41a1c', '#377eb8', '#4daf4a', '#984ea3']
 soldNums = [0.05, 0.45, 0.15, 0.35]
 
 # pie chart
-plt.pie(soldNums, pctdistance=0.75, textprops=dict(color='k'), wedgeprops=dict(edgecolor='w'), 
-			labels=kinds, autopct="%3.2f%%", startangle=60, colors=colors)
+plt.pie(soldNums, pctdistance=0.78, textprops=dict(color='k'), wedgeprops=dict(edgecolor='w'), labels=kinds, autopct="%3.2f%%", 
+			startangle=60, colors=colors)		# 用于绘制饼图，更多参数细节见3.8节
 
 # set titie
 plt.title("不同类型箱子的销售数量占比")
