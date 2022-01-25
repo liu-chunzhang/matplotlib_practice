@@ -19,11 +19,14 @@ labels = ["班级A", "班级B"]
 # plot histograms
 bins = range(0, 101, 10)
 
-plt.hist(x, bins=bins, color=colors, histtype="stepfilled", rwidth=1.0, stacked=True, label=labels, edgecolor='k')	# 可以获得图3.14的效果
-# plt.hist(x, bins=bins, color=colors, histtype="bar", rwidth=0.8, stacked=False, label=labels, edgecolor='k') # 可以获得图3.15的效果
+plt.hist(x, bins=bins, color=colors, histtype="stepfilled", rwidth=1.0, stacked=True, label=labels, edgecolor='k')	# 可以获得堆积图的效果
+# plt.hist(x, bins=bins, color=colors, histtype="bar", rwidth=0.8, stacked=False, label=labels, edgecolor='k') 		# 可以获得并排分布的效果
 
 # set x,y_axis label
+plt.xlim(0, 100)
+plt.locator_params(axis='x', nbins=6)
 plt.xlabel("测试成绩（分）")
+plt.locator_params(axis='y', nbins=10)
 plt.ylabel("学生人数")
 plt.margins(0)
 
