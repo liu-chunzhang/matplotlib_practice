@@ -7,11 +7,11 @@ plt.plot(x, y, ls='-.', lw=2, c="c", label='plot figure', dashes=[2, 1, 1, 1])
 
 plt.legend(loc="lower left")
 
-plt.xlim(0.00, 10)
-plt.xticks(np.arange(0.0, 10.1, 2.0))
+plt.xlim(0.0, 10)
+plt.locator_params(axis='x', nbins=6)
 plt.ylim(-1.0, 1.0)
-plt.yticks(np.arange(-1.0, 1.1, 0.5))
+plt.locator_params(axis='y', nbins=5)
 
-plt.title(r"$y=\sin(x)$", fontsize=15)
+plt.title(r"$y=\sin(x)$", fontsize=15)	# 添加图形内容的标题
 
 plt.show()
