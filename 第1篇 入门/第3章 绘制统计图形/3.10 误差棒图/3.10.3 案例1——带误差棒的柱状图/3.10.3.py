@@ -15,13 +15,13 @@ std_err = [7, 2, 6, 10, 5]
 error_attri = dict(elinewidth=2, ecolor="black", capsize=3)
 
 # create bar with errorbar
-plt.bar(x, y, color="c", width=0.6, align="center", edgecolor='k', yerr=std_err, 
-			error_kw=error_attri, tick_label=["园区1", "园区2", "园区3", "园区4", "园区5"])
+plt.bar(x, y, color="c", width=0.6, align="center", edgecolor='k', yerr=std_err, error_kw=error_attri, 
+			tick_label=["园区1", "园区2", "园区3", "园区4", "园区5"])
 
 # set x,y_axis label
 plt.xlabel("芒果种植区")
+plt.locator_params(axis='y', nbins=7)
 plt.ylabel("收割量")
-plt.yticks(np.arange(0, 120.1, 20))
 
 # set title of axes
 plt.title("不同芒果种植区的单次收割量")

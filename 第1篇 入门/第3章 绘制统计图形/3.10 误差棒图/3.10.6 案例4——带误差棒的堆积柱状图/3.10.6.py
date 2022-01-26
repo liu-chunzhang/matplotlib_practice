@@ -16,7 +16,6 @@ std_err2 = [120, 110, 170, 150, 120]
 
 bar_width = 0.6
 tick_label = ["家庭", "小说", "心理", "科技", "儿童"]
-colors = ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00"]
 error_attri = dict(ecolor="black", elinewidth=2, capsize=0)
 
 # create bar
@@ -33,7 +32,9 @@ plt.title("大型图书展销会的不同图书种类的采购情况")
 # set xaxis grid
 plt.grid(True, axis="y", ls=":", color="gray", alpha=0.2)
 plt.xticks(x, tick_label)
-plt.yticks(np.arange(0, 5000.1, 1000))
+plt.ylim(0, 5000)
+plt.locator_params(axis='y', nbins=6)
+plt.margins(x=0.15)
 plt.legend(loc=1)
 
 plt.show()

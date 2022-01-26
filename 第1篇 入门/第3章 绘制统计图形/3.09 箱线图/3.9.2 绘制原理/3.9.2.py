@@ -17,7 +17,8 @@ colors = ["#1b9e77", "#d95f02"]
 whis = 1.6
 width = 0.35
 
-bplot = plt.boxplot(testList, whiskerprops=dict(linestyle="-", dashes=[5, 5]), whis=whis, widths=width, sym="ko", labels=labels, patch_artist=True, notch=True)
+bplot = plt.boxplot(testList, whiskerprops=dict(linestyle="-", dashes=[5, 5]), whis=whis, widths=width, sym="ko", labels=labels, 
+						patch_artist=True, notch=True)	# notch指箱体添加V型凹痕
 
 for patch, color in zip(bplot["boxes"], colors):
 	patch.set_facecolor(color)

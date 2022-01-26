@@ -29,7 +29,9 @@ plt.ylabel("收割量")
 
 # set xaxis tick_label
 plt.xticks(x+bar_width/2, tick_label)
-plt.yticks(np.arange(0, 140.1, 20))
+plt.ylim(0.0, 140.0)
+plt.locator_params(axis='y', nbins=7)
+plt.margins(x=0.15, y=0.10)
 
 # set title of axes
 plt.title("不同年份的芒果种植区的单次收割量")
