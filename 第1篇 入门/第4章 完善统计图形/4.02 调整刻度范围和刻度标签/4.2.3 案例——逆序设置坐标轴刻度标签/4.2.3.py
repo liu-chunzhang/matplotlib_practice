@@ -12,12 +12,12 @@ machinePower = np.power(time, 2) + 0.7
 
 plt.plot(time, machinePower, linestyle="-", linewidth=2, color="r")
 
-plt.xlim(10, 1)
+plt.xlim(10, 1)		# 使用函数xlim()实现将刻度值降序排列
+plt.locator_params(axis='x', nbins=10)
 plt.xlabel("使用年限")
-plt.xticks(np.arange(10.0, 0.9, -1.0))
 plt.ylim(0, 120)
+plt.locator_params(axis='y', nbins=7)
 plt.ylabel("机器功率")
-plt.yticks(np.arange(0.0, 120.1, 20.0))
 
 plt.title("机器损耗曲线")
 

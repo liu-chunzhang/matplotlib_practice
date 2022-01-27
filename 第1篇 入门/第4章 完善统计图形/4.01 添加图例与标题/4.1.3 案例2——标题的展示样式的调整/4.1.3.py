@@ -11,8 +11,8 @@ plt.title("Left Demo", loc="left", fontdict={"size":"xx-large", "color":"r", "fa
 plt.title("right demo", loc="right", family="Comic Sans MS", size=20, style="oblique", color="c")
 
 plt.xlim(-2.0, 2.0)
-plt.xticks(np.arange(-2.0, 2.1, 0.5))
+plt.locator_params(axis='x', nbins=9)
 plt.ylim(0.0, 8.0)
-plt.yticks(np.arange(0.0, 8.1))
+plt.locator_params(axis='y', nbins=9)
 
 plt.show()

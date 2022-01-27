@@ -10,9 +10,10 @@ plt.plot(x, y, ls="-", lw=2, label=r"$x^{3}$")
 plt.plot(x, y1, ls="-", lw=2, label=r"$x^{2}$")
 plt.plot(x, y2, ls="-", lw=2, label=r"$x^{1}$")
 
-plt.legend(loc="upper left", bbox_to_anchor=(0.05, 0.95), ncol=3, title="power function", shadow=True, fancybox=True)
-plt.margins(0)
-plt.xticks(np.arange(0.0, 2.1, 0.5))
-plt.yticks(np.arange(0.0, 8.1, 1))
+plt.locator_params(axis='x', nbins=5)
+plt.locator_params(axis='y', nbins=9)
+plt.margins(x=0, y=0)
+
+plt.legend(loc="upper left", bbox_to_anchor=(0.05, 0.95), ncol=3, title="power function", shadow=True, fancybox=True)	# fancybox是线框圆角处理参数
 
 plt.show()
