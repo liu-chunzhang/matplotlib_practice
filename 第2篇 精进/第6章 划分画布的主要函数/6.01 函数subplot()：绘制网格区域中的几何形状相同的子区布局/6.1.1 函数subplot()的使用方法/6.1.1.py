@@ -9,14 +9,18 @@ y1 = np.cos(x)
 plt.subplot(121)
 
 plt.xlim(-8.0, 8.0)
+plt.locator_params(axis='x', nbins=9)
 plt.ylim(-1.0, 1.0)
+plt.locator_params(axis='y', nbins=5)
 plt.plot(x, y, ls=":")
 
 # set figure #2
 plt.subplot(122)
 
 plt.xlim(-8.0, 8.0)
+plt.locator_params(axis='x', nbins=9)
 plt.ylim(-1.0, 1.0)
+plt.locator_params(axis='y', nbins=5)
 plt.plot(x, y1, ls=":")
 
 plt.show()
