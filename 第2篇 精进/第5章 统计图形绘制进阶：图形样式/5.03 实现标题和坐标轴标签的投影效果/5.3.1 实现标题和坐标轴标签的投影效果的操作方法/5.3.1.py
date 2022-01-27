@@ -11,9 +11,7 @@ fontsize = 23
 plt.plot(x, y, ls="--", lw=2)
 
 # set text contents
-title = "$y=\sin({x})$"
-xaxis_label = "$x\_axis$"
-yaxis_label = "$y\_axis$"
+title, xaxis_label, yaxis_label = "$y=\sin({x})$", "$x\_axis$", "$y\_axis$"
 
 # get text instance
 title_text_obj = plt.title(title, fontsize=fontsize, va="bottom")
