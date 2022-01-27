@@ -15,7 +15,7 @@ colors = ["#377eb8", "#4daf4a", "#984ea3", "#ff7f00"]
 explode = (0.1, 0.1, 0.1, 0.1)
 
 # exploded pie chart
-plt.pie(students, labels=labels, autopct="%3.1f%%", startangle=45, pctdistance=0.7, labeldistance=1.1, colors=colors)
+plt.pie(students, labels=labels, autopct="%3.1f%%", startangle=45, pctdistance=0.7, labeldistance=1.1, colors=colors, wedgeprops=dict(edgecolor='k'))
 
 plt.title("选择不同难度的测试试卷的学生占比")
 
