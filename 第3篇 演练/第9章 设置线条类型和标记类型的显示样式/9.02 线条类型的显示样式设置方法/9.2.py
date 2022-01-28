@@ -2,11 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 font = dict(family="serif", color="navy", weight="black", size=16)
-color = "skyblue"
-linewidth = 3
 
-fig = plt.figure()
-ax = fig.add_subplot(111)
+fig, ax = plt.subplots()
 
 linestyleList = ["-", "--", "-.", ":"]
 
@@ -17,7 +14,7 @@ ax.text(4, 4.0, "line styles", **font)
 
 for i, ls in enumerate(linestyleList):
 	ax.text(0, i+0.5, f"'{ls}'", **font)
-	ax.plot(x, (i+0.5) * y, linestyle=ls, color=color, linewidth=linewidth)
+	ax.plot(x, (i+0.5) * y, linestyle=ls, color="skyblue", linewidth=3)
 
 ax.set_xlim(-1, 11)
 ax.set_ylim(0, 4.5)
