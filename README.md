@@ -23,9 +23,9 @@ Third, some Chinese notes are added to point out the problems or deficiencies of
 
 Note: all codes are written in Ubuntu 20.04. The python environment used is anaconda3, which integrates matplotlib, numpy, SciPy and other libraries. Readers can also choose it at the beginning of learning.
 
-此外，所有个人使用的字体文件和个人matplotlib的配置文件置于附录文件夹中可供参考。
+此外，所有个人使用的字体文件和个人matplotlib的配置文件置于附录文件夹中，所有的运行结果均置于运行结果集合中，可供参考。
 
-What's more, all of font files and my matplotlibrc are in appendix directory for further reference.
+What's more, all of font files and my matplotlibrc are in appendix directory and all of results of these Python files are in the result set for further reference.
 
 最后，祝您学习顺利，有更多问题可以及时通过我的邮箱lkz@9808@163.com与我取得联系。
 
