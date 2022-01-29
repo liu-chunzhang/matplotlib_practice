@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-fig = plt.figure()
-ax = fig.add_subplot(111)
+fig, ax = plt.subplots(figsize=(8, 8))
 
 # viewing family options
 families = ["serif", "sans-serif", "fantasy", "monospace"]
@@ -36,7 +35,7 @@ variants = ["normal", "small-caps"]
 ax.text(0.5, 1.0, "variant", fontsize=18, horizontalalignment='center')
 
 for i, variant in enumerate(variants):
-	ax.text(0.5, pi[i], variant, family="serif", variant=variant, fontsize=18, horizontalalignment='center')
+	ax.text(0.5, pi[i], variant, family="serif", variant=variant, horizontalalignment='center')
 
 # viewing weight options
 variants = ["light", "normal", "semibold", "bold", "black"]
@@ -44,7 +43,7 @@ variants = ["light", "normal", "semibold", "bold", "black"]
 ax.text(1.0, 1.0, "weight", fontsize=18, horizontalalignment='center')
 
 for i, weight in enumerate(variants):
-	ax.text(1.0, pi[i], weight, weight=weight, horizontalalignment='center')
+	ax.text(1.0, pi[i], weight, weight=weight, family="serif", horizontalalignment='center')	# 此处有可能因为缺少字体粗体而无法显示出区别！
 
 #ax.text()
 
