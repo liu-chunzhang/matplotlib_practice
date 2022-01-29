@@ -1,5 +1,5 @@
 # matplotlib_practice
-本仓库储存了刘大成所著《Python数据可视化之matplotlib实践》（ISBN：978-7-121-34888-4）的全部个人改进后的随书代码，供中文python数据可视化学习者参考。
+本仓库储存了刘大成所著《Python数据可视化之matplotlib实践》（ISBN：978-7-121-34888-4）的全部个人改进后的随书代码（全部主章节，不包含附录），供中文python数据可视化学习者参考。
 
 This repository stores all of personally improved code of Matplotlib Practices in Python Data Visualization written by Liu Dacheng(ISBN: 978-7-121-34888-4), which can be a reference for Chinese Python data visualization learners.
 
